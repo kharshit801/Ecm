@@ -2,8 +2,11 @@ package com.example.ecm;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,10 +31,19 @@ public class MainActivity extends AppCompatActivity {
         startButton = findViewById(R.id.login_button);
 
         startButton.setOnClickListener(v -> {
-            String userName = nameEditText.getText().toString();
-            Intent intent = new Intent(MainActivity.this, Homescreen.class);
-            intent.putExtra("USER_NAME", userName);
-            startActivity(intent);
+            String userName = nameEditText.getText().toString().trim();
+            String regNo = regNoEditText.getText().toString().trim();
+
+            if (userName.isEmpty() || regNo.isEmpty()) {
+                Toast.makeText(MainActivity.this, "Please enter both name and registration number", Toast.LENGTH_SHORT).show();
+            } else {
+                Intent intent = new Intent(MainActivity.this, Homescreen.class);
+                intent.putExtra("USER_NAME", userName);
+                startActivity(intent);
+
+                String welcomeMessage = "Welcome " + userName + "!";
+                Toast.makeText(MainActivity.this, welcomeMessage, Toast.LENGTH_SHORT).show();
+            }
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

@@ -14,10 +14,12 @@
         android:layout_height="wrap_content"
         android:text="Subject Name"
         android:textSize="18sp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp" />
 
     <Button
+        android:layout_marginTop="50dp"
         android:id="@+id/btn_syllabus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,6 +29,7 @@
         android:layout_marginBottom="16dp" />
 
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +39,7 @@
         android:layout_marginBottom="16dp" />
 
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_reference_books"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" />
 
-    <Button
+    <Button   android:layout_marginTop="10dp"
         android:id="@+id/btn_previous_year_papers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
