@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SubjectDetailActivity">
+
+    <TextView
+        android:id="@+id/subject_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject Name"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_syllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syllabus"
+        android:layout_below="@id/subject_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:layout_below="@id/btn_syllabus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_reference_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reference Books"
+        android:layout_below="@id/btn_notes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_previous_year_papers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Year Papers"
+        android:layout_below="@id/btn_reference_books"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

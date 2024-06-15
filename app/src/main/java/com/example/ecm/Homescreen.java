@@ -1,5 +1,6 @@
 package com.example.ecm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,13 +29,6 @@ public class Homescreen extends AppCompatActivity {
         setContentView(R.layout.activity_homescreen);
 
         Button nextButton = findViewById(R.id.btn_next);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Handle the button click
-
-            }
-        });
 
         String userName = getIntent().getStringExtra("USER_NAME");
 
@@ -63,6 +57,23 @@ public class Homescreen extends AppCompatActivity {
                 subjectSpinner.setEnabled(false);
             }
         });
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int selectedSemester = semesterSpinner.getSelectedItemPosition() + 1;
+                int selectedSubject = subjectSpinner.getSelectedItemPosition() + 1;
+                String subjectName = (String) subjectSpinner.getSelectedItem();
+
+                Intent intent = new Intent(Homescreen.this, SubjectDetailActivity.class);
+                intent.putExtra("SEMESTER", selectedSemester);
+                intent.putExtra("SUBJECT", selectedSubject);
+                intent.putExtra("SUBJECT_NAME", subjectName);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
     private void loadSubjects(int semester) {
@@ -100,6 +111,7 @@ public class Homescreen extends AppCompatActivity {
         subjectAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         subjectSpinner.setAdapter(subjectAdapter);
         subjectSpinner.setEnabled(true);
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
