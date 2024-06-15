@@ -13,30 +13,50 @@
     </string-array>
 
     <string-array name="subjects_sem1">
-        <item>Subject 1.1</item>
-        <item>Subject 1.2</item>
-        <item>Subject 1.3</item>
+        <item>Enineering Chemistry</item>
+        <item>Mathematics 1</item>
+        <item>Material Science </item>
+        <item>Enineering Mechanics</item>
+        <item>Engineering Thermodynamics</item>
+        <item>Professional Comm.</item>
     </string-array>
     <string-array name="subjects_sem2">
-        <item>Subject 2.1</item>
-        <item>Subject 2.2</item>
-        <item>Subject 2.3</item>
+        <item>Engineering Physics 1</item>
+        <item>Mathematics 2</item>
+        <item>Data Structures </item>
+        <item>Fluid Mechanics</item>
+        <item>Engineering Graphics</item>
+        <item>Ai/ML</item>
+        <item>ECC</item>
+
+
     </string-array>
     <string-array name="subjects_sem3">
-        <item>Subject 3.1</item>
-        <item>Subject 3.2</item>
-        <item>Subject 3.3</item>
+        <item>Engineering Analysis and Design</item>
+        <item>Linear Algebra and Discrete Mathematics</item>
+        <item>Mechanics of Solids</item>
+        <item>Biology for Engineers </item>
+        <item>Thermo-Fluids Engineering</item>
+        <item>Data Sciences and ML in Mechanics</item>
+        <item>Management Concepts and Application</item>
     </string-array>
     <string-array name="subjects_sem4">
-        <item>Subject 4.1</item>
-        <item>Subject 4.2</item>
-        <item>Subject 4.3</item>
+        <item>Advanced Mechanics of Solid</item>
+        <item>Advanced Fluid Mechanics </item>
+        <item>Applied Mathematics and Comp.</item>
+        <item>Biomechanics</item>
+        <item>Dynamics of Mechanical Systems </item>
+        <item>Analysis of Algorithms.</item>
+        <item>Business Economics</item>
     </string-array>
+
     <string-array name="subjects_sem5">
-        <item>Subject 5.1</item>
-        <item>Subject 5.2</item>
-        <item>Subject 5.3</item>
+        <item> Finite Element Methods</item>
+        <item>Compressible Flow and Computations</item>
+        <item>Continuum Mechanics and Constitutive Modeling</item>
+        <item>Design and Analysis of Experiments</item>
     </string-array>
+    
     <string-array name="subjects_sem6">
         <item>Subject 6.1</item>
         <item>Subject 6.2</item>
