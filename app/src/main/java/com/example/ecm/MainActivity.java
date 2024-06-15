@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        nameEditText = findViewById(R.id.et_name);
-        regNoEditText = findViewById(R.id.et_reg_no);
-        startButton = findViewById(R.id.btn_start);
+        nameEditText = findViewById(R.id.name_input);
+        regNoEditText = findViewById(R.id.reg_no_input);
+        startButton = findViewById(R.id.login_button);
 
         startButton.setOnClickListener(v -> {
             String userName = nameEditText.getText().toString();
